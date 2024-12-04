@@ -1,0 +1,155 @@
+/* General Container Styling */
+.profile-container, .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Profile Box and Image Box */
+.profile-box, .image-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    background-color: #fff; /* Neutral background */
+}
+
+/* Profile Box */
+.profile-box {
+    width: 200px;
+    height: 200px;
+}
+
+.profile-box:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
+    background-color: #f8f9fa; /* Light hover background */
+}
+
+/* Image Box */
+.image-box {
+    width: 120px;
+    height: 120px;
+}
+
+.image-box:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue hover background */
+}
+
+/* Selected State for Image Box */
+.image-box.selected {
+    border: 2px solid #0056b3; /* Darker blue for selected state */
+    background-color: rgba(0, 86, 179, 0.1);
+}
+
+/* Profile and Box Images */
+.profile-image, .box-image {
+    width: 100%;
+    height: auto;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Profile Name */
+.profile-name {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Add Profile Box */
+.add-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #007bff;
+    border: 2px dashed #ccc;
+    background-color: #f9f9f9;
+    width: 200px;
+    height: 200px;
+    transition: all 0.3s ease;
+}
+
+.add-profile:hover {
+    border-color: #007bff;
+    background-color: #f8f9fa;
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.btn-custom {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-box, .add-profile {
+        width: 150px;
+        height: 150px;
+    }
+
+    .image-box {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-image, .box-image {
+        max-width: 70px;
+        max-height: 70px;
+    }
+}
+
+
+
+.profilePageContainer {
+    background-color: #DAD7CD;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.profileHeading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3a5a40;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.profileSubHeading {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #6c757d;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}

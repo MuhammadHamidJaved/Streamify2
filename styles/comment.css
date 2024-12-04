@@ -1,0 +1,133 @@
+/* Base styles for the comment feed */
+.comment-feed {
+    font-family: Arial, sans-serif;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 8px; /* Slightly rounded corners for a softer feel */
+    background-color: #e0e8d8; /* Lighter green for less contrast */
+    color: #444; /* Darker text for readability without being harsh */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a gentle lift */
+}
+
+/* Title style */
+.comment-feed-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #444; /* Neutral dark color */
+    text-shadow: none; /* Removed strong text shadow for softness */
+}
+
+/* Styles for the Post type */
+.comment-feed.post {
+    background-color: #f0f4e2; /* Even lighter green */
+    border: 1px solid #b0c29f; /* Light green border */
+}
+
+.comment-feed.post .comment-form {
+    background-color: #f9f9f9; /* Light background for input areas */
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 15px; /* Slight margin for spacing */
+}
+
+.comment-feed.post .comment-textarea {
+    border: 1px solid #c6d1a1; /* Light greenish border */
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fafafa; /* Lighter background */
+    color: #333; /* Softer text for input readability */
+    margin-bottom: 10px;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.comment-feed.post .comment-submit-btn {
+    background-color: #b0c29f; /* Softer green for buttons */
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.comment-feed.post .comment-submit-btn:hover {
+    background-color: #a1b59d; /* Slightly darker on hover */
+    transform: scale(1.03); /* Slight hover effect */
+}
+
+.comment-feed.post .comment-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.comment-feed.post .comment-item {
+    margin-bottom: 12px;
+    background-color: #f9f9f9; /* Lighter background for comments */
+    color: #333; /* Dark text for clarity */
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d2e2b1; /* Soft green border */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Minimal shadow */
+}
+
+/* Styles for the Movie type */
+.comment-feed.movie {
+    background-color: #f5f8e9; /* Light beige for movies */
+    border: 1px solid #c6d1a1; /* Matching light border */
+}
+
+.comment-feed.movie .comment-form {
+    background-color: #fafafa; /* Light neutral background */
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.comment-feed.movie .comment-textarea {
+    border: 1px solid #c6d1a1;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.comment-feed.movie .comment-submit-btn {
+    background-color: #c6d1a1; /* Muted green for buttons */
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.comment-feed.movie .comment-submit-btn:hover {
+    background-color: #a1b59d;
+    transform: scale(1.03);
+}
+
+.comment-feed.movie .comment-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.comment-feed.movie .comment-item {
+    margin-bottom: 12px;
+    background-color: #fafafa; /* Soft background for comments */
+    color: #333; /* Dark text for readability */
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d2e2b1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

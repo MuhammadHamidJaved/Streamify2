@@ -1,0 +1,30 @@
+.Logo path{
+    fill: transparent;
+    stroke: #3A5A40;
+    stroke-width: 5;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: text-animation 7s ease-in-out 1 forwards;
+}
+
+.nav-input{
+    background-color: #DAD7CD;
+    border: none;
+    &:focus{
+        outline: green;
+        background-color: #DAD7CD;
+        box-shadow: 0 0 6px green;
+    }
+}
+
+@keyframes text-animation {
+    0% {
+        fill: transparent;
+        stroke-dashoffset: 500;
+    }
+    100% {
+        fill: #3A5A40;
+        stroke-dashoffset: 0;
+    }
+    
+}

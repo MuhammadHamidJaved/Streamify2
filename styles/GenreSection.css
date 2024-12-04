@@ -1,0 +1,96 @@
+/* GenreSection.css */
+.genre-section {
+  position: relative;
+}
+
+.movies-row {
+  display: flex;
+  overflow-x: hidden; /* Hide native scrollbar */
+  gap: 15px;
+  padding-bottom: 10px;
+}
+
+.movie-card-link {
+  text-decoration: none;
+}
+
+.movie-card {
+  background-color: #cce0c1;
+  color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 200px;
+  max-width: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 10px;
+}
+
+.movie-title {
+  font-size: 1rem;
+  color: #000;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-release-date {
+  color: #000;
+  font-size: 0.85rem;
+}
+
+/* Scroll Arrow Buttons */
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.scroll-arrow:hover {
+  background-color: #666;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+
+.genre-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.genre-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
