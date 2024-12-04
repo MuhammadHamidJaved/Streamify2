@@ -1,11 +1,3 @@
-{/* <p>Likes: {post.likes_count}</p>
-              <button onClick={() => handleLikeDislike(post.id, "like")}>Like</button>
-              <p>Dislikes: {post.dislikes_count}</p>
-              <button onClick={() => handleLikeDislike(post.id, "dislike")}>Dislike</button> */}
-
-
-
-
 import React, { useState,useEffect } from 'react';
 import useWebSocket from '../../hooks/useWebSocket';
 import axios from 'axios';

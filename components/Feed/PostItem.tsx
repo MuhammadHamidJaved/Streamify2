@@ -1,25 +1,3 @@
-// import React from "react";
-// import { Post } from "@/types/Post";
-// import DisplayPostStatus from "./DisplayPostStatus";
-// import CommentFeed from "./CommentFeed";
-
-// interface PostItemProps {
-//   post: Post;
-// }
-
-// const PostItem: React.FC<PostItemProps> = ({ post }) => {
-//   return (
-//     <div>
-//       <h3>{post.content}</h3>
-//       {post.media_url && <img src={post.media_url} alt="Media" />}
-//       <p>{post.created_at}</p>
-//       <DisplayPostStatus post_Id={post.id} />
-//       <CommentFeed id={post.id.toString()} type="post" />
-//     </div>
-//   );
-// };
-
-// export default PostItem;
 
 
 
